@@ -3,7 +3,7 @@ class Particle {
     this.fade = 255;
     this.pos = createVector(x, y);
     if (!blast) {
-      this.vel = createVector(0, -16.8);
+      this.vel = createVector(0, -19);
     } else {
       this.vel = p5.Vector.random2D();
       this.vel.mult(-random(6));
