@@ -4,8 +4,8 @@ var counter = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight - 65);
-  var tag = createElement('h4', 'Created by Neil Sudeep Sabde');
-  firework = new Particle(width / 2, height - 60);
+  var tag = createElement('h2', 'Created by Neil Sudeep Sabde');
+  firework = new Particle(width / 2, height / 3);
 }
 
 function draw() {

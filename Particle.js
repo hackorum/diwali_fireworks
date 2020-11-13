@@ -3,7 +3,7 @@ class Particle {
     this.fade = 255;
     this.pos = createVector(x, y);
     if (!blast) {
-      this.vel = createVector(0, -19);
+      this.vel = createVector(0, -3);
     } else {
       this.vel = p5.Vector.random2D();
       this.vel.mult(-random(6));
@@ -32,6 +32,8 @@ class Particle {
       fill(255, 215, 0, this.textFade);
       this.textFade += 1;
       text("Happy Diwali", width / 2, height / 2);
+      textSize(width / 20)
+      text("From Neil, Manjiri and Sudeep", width / 2, height / 1.3);
     }
 
     if (!this.blast) {
