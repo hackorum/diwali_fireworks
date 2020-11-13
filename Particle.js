@@ -33,7 +33,7 @@ class Particle {
       this.textFade += 1;
       text("Happy Diwali", width / 2, height / 2);
       textSize(width / 20)
-      text("From Neil, Manjiri and Sudeep", width / 2, height / 1.3);
+      text("From Neil, Manjiri, Sudeep and Sabde Family", width / 2, height / 1.3);
     }
 
     if (!this.blast) {
