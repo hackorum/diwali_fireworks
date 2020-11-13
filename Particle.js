@@ -13,7 +13,7 @@ class Particle {
     this.blast = blast;
     this.r = 255;
     this.g = 215;
-    this.b = 255;
+    this.b = 0;
     this.move = true;
     this.textFade = 0;
   }
@@ -28,10 +28,10 @@ class Particle {
     if (this.vel.y >= 0) {
       this.wish();
       textAlign(CENTER);
-      textSize(160);
+      textSize(width / 10);
       fill(255, 215, 0, this.textFade);
       this.textFade += 1;
-      text("Happy Diwali", width/2, height/2);
+      text("Happy Diwali", width / 2, height / 2);
     }
 
     if (!this.blast) {
@@ -55,7 +55,5 @@ class Particle {
 
     noStroke();
     ellipse(this.pos.x, this.pos.y, 7, 7);
-
   }
-
 }

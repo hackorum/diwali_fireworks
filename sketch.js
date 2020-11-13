@@ -1,9 +1,10 @@
-var firework, particles = [];
+var firework,
+  particles = [];
 var counter = 0;
 
 function setup() {
-  createCanvas(1000, 800);
-  firework = new Particle(width/2, height);
+  createCanvas(windowWidth, windowHeight);
+  firework = new Particle(width / 2, height);
 }
 
 function draw() {
@@ -28,6 +29,5 @@ function draw() {
 }
 
 function burstParticle() {
-    particles.push(new Particle(firework.pos.x, firework.pos.y, true));
-
+  particles.push(new Particle(firework.pos.x, firework.pos.y, true));
 }
